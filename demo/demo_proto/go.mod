@@ -7,10 +7,10 @@ replace github.com/apache/thrift => github.com/apache/thrift v0.13.0
 require (
 	github.com/cloudwego/fastpb v0.0.5
 	github.com/cloudwego/kitex v0.12.1
+	github.com/joho/godotenv v1.5.1
 	github.com/kitex-contrib/obs-opentelemetry/logging/logrus v0.0.0-20241120035129-55da83caab1b
 	github.com/kitex-contrib/registry-consul v0.1.0
 	github.com/kr/pretty v0.3.1
-	github.com/kyzyc/biz-demo/demo/demo_thrift v0.0.0-20250109091644-0164742b225d
 	github.com/redis/go-redis/v9 v9.7.0
 	go.uber.org/zap v1.27.0
 	google.golang.org/protobuf v1.33.0
@@ -22,7 +22,6 @@ require (
 )
 
 require (
-	github.com/apache/thrift v0.13.0 // indirect
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
 	github.com/bytedance/gopkg v0.1.1 // indirect
 	github.com/bytedance/sonic v1.12.5 // indirect
@@ -34,7 +33,6 @@ require (
 	github.com/cloudwego/frugal v0.2.3 // indirect
 	github.com/cloudwego/gopkg v0.1.3 // indirect
 	github.com/cloudwego/iasm v0.2.0 // indirect
-	github.com/cloudwego/kitex/pkg/protocol/bthrift v0.0.0-20250107111950-48fcf423b44d // indirect
 	github.com/cloudwego/localsession v0.1.1 // indirect
 	github.com/cloudwego/netpoll v0.6.5 // indirect
 	github.com/cloudwego/runtimex v0.1.0 // indirect
