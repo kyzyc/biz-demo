@@ -2,6 +2,7 @@ package mysql
 
 import (
 	"fmt"
+	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/biz/model"
 	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/conf"
 	"os"
 
@@ -36,11 +37,7 @@ func Init() {
 		Version string
 	}
 
-	var v Version
-	err = DB.Raw("select version() as version").Scan(&v).Error
-	if err != nil {
-		panic(err)
-	}
+	DB.AutoMigrate(&model.User{})
 
-	fmt.Println(v)
+	fmt.Printf("%#v", DB.Debug().Exec("select version()"))
 }

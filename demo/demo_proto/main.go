@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/biz/dal"
+	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/middleware"
 	"log"
 	"net"
 	"time"
@@ -43,7 +44,7 @@ func kitexInit() (opts []server.Option) {
 	if err != nil {
 		panic(err)
 	}
-	opts = append(opts, server.WithServiceAddr(addr))
+	opts = append(opts, server.WithServiceAddr(addr), server.WithMiddleware(middleware.Middleware))
 
 	// service info
 	opts = append(opts, server.WithServerBasicInfo(&rpcinfo.EndpointBasicInfo{
