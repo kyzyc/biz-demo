@@ -32,4 +32,5 @@ _testmain.go
 /.idea
 /.vscode
 /output
+/tmp
 *.local.yml
