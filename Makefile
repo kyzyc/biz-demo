@@ -1,4 +1,4 @@
-.PHONY: gen-demo-proto gen-demo-thrift run-demo-proto run-demo-thrift
+.PHONY: gen-demo-proto gen-demo-thrift gen-front-end run-demo-proto run-demo-thrift
 
 gen-demo-proto:
 	@cd demo/demo_proto && cwgo server -I ../../idl --type RPC --module github.com/kyzyc/biz-demo/gomall/demo/demo_proto --service demo_proto --idl ../../idl/echo.proto
@@ -11,5 +11,9 @@ run-demo-proto:
 
 run-demo-thrift:
 	@cd demo/demo_thrift && go run .
+
+gen-front-end:
+	@cd app/frontend && cwgo server --type HTTP --idl ../../idl/frontend/home.proto --service frontend -module github.com/kyzyc/biz-demo/gomall/app/frontend -I ../../idl
+
 
 
