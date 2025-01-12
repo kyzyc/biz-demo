@@ -26,6 +26,6 @@ func (h *LoginService) Run(req *auth.LoginReq) (resp *common.Empty, err error) {
 	// TODO USER SVC API
 	session := sessions.Default(h.RequestContext)
 	session.Set("user_id", 1)
-	session.Save()
+	err = session.Save()
 	return
 }

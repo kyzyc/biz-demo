@@ -67,11 +67,13 @@ func Logout(ctx context.Context, c *app.RequestContext) {
 		return
 	}
 
-	resp, err := service.NewLogoutService(ctx, c).Run(&req)
+	_, err = service.NewLogoutService(ctx, c).Run(&req)
 
 	if err != nil {
 		utils.SendErrResponse(ctx, c, consts.StatusOK, err)
 		return
 	}
-	utils.SendSuccessResponse(ctx, c, consts.StatusOK, resp)
+	//utils.SendSuccessResponse(ctx, c, consts.StatusOK, resp)
+
+	c.Redirect(consts.StatusOK, []byte("/"))
 }
