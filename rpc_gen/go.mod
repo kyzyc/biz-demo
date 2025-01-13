@@ -1,4 +1,4 @@
-module github.com/kyzyc/biz-demo/gomall/rpc_gen
+module github.com/kyzyc/biz-demo/rpc_gen
 
 go 1.23.2
 
