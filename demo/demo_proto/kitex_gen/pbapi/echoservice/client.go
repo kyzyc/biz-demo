@@ -6,7 +6,7 @@ import (
 	"context"
 	client "github.com/cloudwego/kitex/client"
 	callopt "github.com/cloudwego/kitex/client/callopt"
-	pbapi "github.com/kyzyc/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi"
+	pbapi "github.com/kyzyc/biz-demo/demo/demo_proto/kitex_gen/pbapi"
 )
 
 // Client is designed to provide IDL-compatible methods with call-option parameter for kitex framework.

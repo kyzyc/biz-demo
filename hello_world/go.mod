@@ -1,4 +1,4 @@
-module github.com/kyzyc/biz-demo/gomall/hello_world
+module github.com/kyzyc/biz-demo/hello_world
 
 go 1.23.2
 

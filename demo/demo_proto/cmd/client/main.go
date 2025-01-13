@@ -11,9 +11,9 @@ import (
 	"github.com/cloudwego/kitex/pkg/transmeta"
 	"github.com/cloudwego/kitex/transport"
 	consul "github.com/kitex-contrib/registry-consul"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi/echoservice"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/middleware"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/kitex_gen/pbapi"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/kitex_gen/pbapi/echoservice"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/middleware"
 	"log"
 )
 

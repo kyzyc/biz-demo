@@ -8,7 +8,7 @@ import (
 	client "github.com/cloudwego/kitex/client"
 	kitex "github.com/cloudwego/kitex/pkg/serviceinfo"
 	streaming "github.com/cloudwego/kitex/pkg/streaming"
-	pbapi "github.com/kyzyc/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi"
+	pbapi "github.com/kyzyc/biz-demo/demo/demo_proto/kitex_gen/pbapi"
 	proto "google.golang.org/protobuf/proto"
 )
 

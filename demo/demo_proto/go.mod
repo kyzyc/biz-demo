@@ -1,4 +1,4 @@
-module github.com/kyzyc/biz-demo/gomall/demo/demo_proto
+module github.com/kyzyc/biz-demo/demo/demo_proto
 
 go 1.23.2
 

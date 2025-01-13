@@ -1,4 +1,4 @@
-module github.com/kyzyc/biz-demo/gomall/app/frontend
+module github.com/kyzyc/biz-demo/app/frontend
 
 go 1.23.2
 

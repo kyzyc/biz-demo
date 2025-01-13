@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/joho/godotenv"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/biz/dal"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/biz/dal/mysql"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/biz/model"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/biz/dal"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/biz/dal/mysql"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/biz/model"
 )
 
 func main() {

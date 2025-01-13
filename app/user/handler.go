@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	user "github.com/kyzyc/biz-demo/rpc_gen/kitex_gen/user"
-	"github.com/kyzyc/biz-demo/gomall/app/user/biz/service"
+	"github.com/kyzyc/biz-demo/app/user/biz/service"
 )
 
 // UserServiceImpl implements the last service interface defined in the IDL.

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/biz/dal"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/middleware"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/biz/dal"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/middleware"
 	"log"
 	"net"
 	"time"
@@ -12,8 +12,8 @@ import (
 	"github.com/cloudwego/kitex/server"
 	"github.com/joho/godotenv"
 	kitexlogrus "github.com/kitex-contrib/obs-opentelemetry/logging/logrus"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/conf"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi/echoservice"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/conf"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/kitex_gen/pbapi/echoservice"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
 

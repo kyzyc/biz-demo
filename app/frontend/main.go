@@ -7,7 +7,7 @@ import (
 	"github.com/hertz-contrib/sessions"
 	"github.com/hertz-contrib/sessions/redis"
 	"github.com/joho/godotenv"
-	"github.com/kyzyc/biz-demo/gomall/app/frontend/middleware"
+	"github.com/kyzyc/biz-demo/app/frontend/middleware"
 	"os"
 	"time"
 
@@ -22,8 +22,8 @@ import (
 	"github.com/hertz-contrib/logger/accesslog"
 	hertzlogrus "github.com/hertz-contrib/logger/logrus"
 	"github.com/hertz-contrib/pprof"
-	"github.com/kyzyc/biz-demo/gomall/app/frontend/biz/router"
-	"github.com/kyzyc/biz-demo/gomall/app/frontend/conf"
+	"github.com/kyzyc/biz-demo/app/frontend/biz/router"
+	"github.com/kyzyc/biz-demo/app/frontend/conf"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
 )

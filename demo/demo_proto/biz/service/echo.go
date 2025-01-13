@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/bytedance/gopkg/cloud/metainfo"
 	"github.com/cloudwego/kitex/pkg/kerrors"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/kitex_gen/pbapi"
 )
 
 type EchoService struct {

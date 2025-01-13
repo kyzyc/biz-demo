@@ -5,7 +5,7 @@ import (
 	"github.com/hertz-contrib/sessions"
 
 	"github.com/cloudwego/hertz/pkg/app"
-	common "github.com/kyzyc/biz-demo/gomall/app/frontend/hertz_gen/frontend/common"
+	common "github.com/kyzyc/biz-demo/app/frontend/hertz_gen/frontend/common"
 )
 
 type LogoutService struct {

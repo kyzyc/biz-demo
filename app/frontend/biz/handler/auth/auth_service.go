@@ -4,10 +4,10 @@ import (
 	"context"
 	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/cloudwego/hertz/pkg/protocol/consts"
-	"github.com/kyzyc/biz-demo/gomall/app/frontend/biz/service"
-	"github.com/kyzyc/biz-demo/gomall/app/frontend/biz/utils"
-	auth "github.com/kyzyc/biz-demo/gomall/app/frontend/hertz_gen/frontend/auth"
-	common "github.com/kyzyc/biz-demo/gomall/app/frontend/hertz_gen/frontend/common"
+	"github.com/kyzyc/biz-demo/app/frontend/biz/service"
+	"github.com/kyzyc/biz-demo/app/frontend/biz/utils"
+	auth "github.com/kyzyc/biz-demo/app/frontend/hertz_gen/frontend/auth"
+	common "github.com/kyzyc/biz-demo/app/frontend/hertz_gen/frontend/common"
 )
 
 // Login .

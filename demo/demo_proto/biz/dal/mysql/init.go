@@ -2,8 +2,8 @@ package mysql
 
 import (
 	"fmt"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/biz/model"
-	"github.com/kyzyc/biz-demo/gomall/demo/demo_proto/conf"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/biz/model"
+	"github.com/kyzyc/biz-demo/demo/demo_proto/conf"
 	"os"
 
 	"gorm.io/driver/mysql"

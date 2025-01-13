@@ -8,7 +8,7 @@ import (
 	"github.com/cloudwego/kitex/pkg/rpcinfo"
 	"github.com/cloudwego/kitex/server"
 	kitexlogrus "github.com/kitex-contrib/obs-opentelemetry/logging/logrus"
-	"github.com/kyzyc/biz-demo/gomall/app/user/conf"
+	"github.com/kyzyc/biz-demo/app/user/conf"
 	"github.com/kyzyc/biz-demo/rpc_gen/kitex_gen/user/userservice"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"

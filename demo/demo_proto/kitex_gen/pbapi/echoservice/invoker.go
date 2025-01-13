@@ -4,7 +4,7 @@ package echoservice
 
 import (
 	server "github.com/cloudwego/kitex/server"
-	pbapi "github.com/kyzyc/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi"
+	pbapi "github.com/kyzyc/biz-demo/demo/demo_proto/kitex_gen/pbapi"
 )
 
 // NewInvoker creates a server.Invoker with the given handler and options.

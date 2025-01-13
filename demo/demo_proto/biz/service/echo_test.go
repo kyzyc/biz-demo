@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 	"testing"
-	pbapi "github.com/kyzyc/biz-demo/gomall/demo/demo_proto/kitex_gen/pbapi"
+	pbapi "github.com/kyzyc/biz-demo/demo/demo_proto/kitex_gen/pbapi"
 )
 
 func TestEcho_Run(t *testing.T) {

@@ -2,7 +2,7 @@ package utils
 
 import (
 	"context"
-	"github.com/kyzyc/biz-demo/gomall/app/frontend/middleware"
+	"github.com/kyzyc/biz-demo/app/frontend/middleware"
 
 	"github.com/cloudwego/hertz/pkg/app"
 )
