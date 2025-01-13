@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	user "github.com/kyzyc/gomall/rpc_gen/kitex_gen/user"
+	user "github.com/kyzyc/biz-demo/gomall/rpc_gen/kitex_gen/user"
 	"github.com/kyzyc/biz-demo/gomall/app/user/biz/service"
 )
 
