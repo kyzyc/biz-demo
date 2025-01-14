@@ -1,10 +1,10 @@
 package rpc
 
 import (
-	"github.com/cloudwego/hertz/pkg/common/hlog"
 	"github.com/cloudwego/kitex/client"
 	consul "github.com/kitex-contrib/registry-consul"
-	frontendUtils "github.com/kyzyc/biz-demo/frontend/utils"
+	"github.com/kyzyc/biz-demo/app/frontend/conf"
+	frontendUtils "github.com/kyzyc/biz-demo/app/frontend/utils"
 	"github.com/kyzyc/biz-demo/rpc_gen/kitex_gen/user/userservice"
 	"sync"
 )
@@ -22,13 +22,8 @@ func Init() {
 }
 
 func iniUserClient() {
-	r, err := consul.NewConsulResolver("127.0.0.1:8500")
+	r, err := consul.NewConsulResolver(conf.GetConf().Hertz.RegistryAddr)
 	frontendUtils.MustHandleError(err)
-	if err != nil {
-		hlog.Fatal(err)
-	}
 	UserClient, err = userservice.NewClient("user", client.WithResolver(r))
-	if err != nil {
-		hlog.Fatal(err)
-	}
+	frontendUtils.MustHandleError(err)
 }
