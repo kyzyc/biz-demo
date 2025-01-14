@@ -21,8 +21,9 @@ func TestRegister_Run(t *testing.T) {
 		PasswordConfirm: "FJOSJDOJASD",
 	}
 	resp, err := s.Run(req)
+
 	t.Logf("err: %v", err)
-	t.Logf("resp: %v", resp)
+	t.Logf("resp.UserId: %v", resp.UserId)
 
 	// todo: edit your unit test
 
