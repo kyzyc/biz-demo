@@ -3,12 +3,10 @@ package service
 import (
 	"context"
 	"errors"
-	"fmt"
 	"github.com/kyzyc/biz-demo/app/user/biz/dal/mysql"
 	"github.com/kyzyc/biz-demo/app/user/biz/model"
 	user "github.com/kyzyc/biz-demo/rpc_gen/kitex_gen/user"
 	"golang.org/x/crypto/bcrypt"
-	"strconv"
 )
 
 type RegisterService struct {
@@ -44,8 +42,6 @@ func (s *RegisterService) Run(req *user.RegisterReq) (resp *user.RegisterResp, e
 	if err != nil {
 		return nil, err
 	}
-
-	fmt.Println("\nid:" + strconv.Itoa(int(newUser.ID)) + "\n")
 
 	return &user.RegisterResp{UserId: int32(newUser.ID)}, nil
 }
