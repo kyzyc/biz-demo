@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+	"fmt"
 	"github.com/hertz-contrib/sessions"
 	"github.com/kyzyc/biz-demo/app/frontend/infra/rpc"
 	"github.com/kyzyc/biz-demo/rpc_gen/kitex_gen/user"
@@ -31,6 +32,7 @@ func (h *RegisterService) Run(req *auth.RegisterReq) (resp *common.Empty, err er
 		Password:        req.Password,
 		PasswordConfirm: req.PasswordConfirm,
 	})
+	fmt.Println(userResp.UserId)
 	if err != nil {
 		return nil, err
 	}
