@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+	"fmt"
 	"github.com/kyzyc/biz-demo/app/product/biz/dal/mysql"
 	"github.com/kyzyc/biz-demo/app/product/biz/model"
 	product "github.com/kyzyc/biz-demo/app/product/kitex_gen/product"
@@ -28,10 +29,13 @@ func (s *ListProductsService) Run(req *product.ListProductsReq) (resp *product.L
 				Id:          uint32(v.ID),
 				Name:        v.Name,
 				Description: v.Description,
+				Picture:     v.Picture,
 				Price:       v.Price,
 			})
 		}
 	}
+
+	fmt.Println("\n--------------list-------------")
 
 	return resp, err
 }

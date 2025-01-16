@@ -2,13 +2,11 @@ package category
 
 import (
 	"context"
-
 	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/cloudwego/hertz/pkg/protocol/consts"
 	"github.com/kyzyc/biz-demo/app/frontend/biz/service"
 	"github.com/kyzyc/biz-demo/app/frontend/biz/utils"
 	category "github.com/kyzyc/biz-demo/app/frontend/hertz_gen/frontend/category"
-	common "github.com/kyzyc/biz-demo/app/frontend/hertz_gen/frontend/common"
 )
 
 // Category .
@@ -22,7 +20,7 @@ func Category(ctx context.Context, c *app.RequestContext) {
 		return
 	}
 
-	resp := &common.Empty{}
+	resp := make(map[string]any)
 	resp, err = service.NewCategoryService(ctx, c).Run(&req)
 	if err != nil {
 		utils.SendErrResponse(ctx, c, consts.StatusOK, err)
