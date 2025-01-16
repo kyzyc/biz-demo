@@ -4,7 +4,7 @@ go 1.23.2
 
 replace github.com/apache/thrift => github.com/apache/thrift v0.13.0
 
-replace github.com/cloudwego/biz-demo/gomall/rpc_gen => ../../rpc_gen
+replace github.com/kyzyc/biz-demo/rpc_gen => ../../rpc_gen
 
 require (
 	github.com/cloudwego/hertz v0.9.5
