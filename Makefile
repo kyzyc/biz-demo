@@ -14,7 +14,7 @@ run-demo-thrift:
 	@cd demo/demo_thrift && go run .
 
 gen-frontend:
-	@cd app/frontend && cwgo server --type HTTP --idl ../../idl/frontend/auth_page.proto --service frontend -module ${ROOT_MOD}/app/frontend -I ../../idl
+	@cd app/frontend && cwgo server --type HTTP --idl ../../idl/frontend/product_page.proto --service frontend -module ${ROOT_MOD}/app/frontend -I ../../idl
 
 gen-server:
 	@cd app/user && go mod init ${ROOT_MOD}/app/user && cwgo server --type RPC --idl ../../idl/user.proto --service user --module ${ROOT_MOD}/app/user --pass "-use ${ROOT_MOD}/rpc_gen/kitex_gen" -I ../../idl
