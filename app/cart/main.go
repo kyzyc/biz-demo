@@ -1,7 +1,10 @@
 package main
 
 import (
+	"github.com/joho/godotenv"
 	consul "github.com/kitex-contrib/registry-consul"
+	"github.com/kyzyc/biz-demo/app/cart/biz/dal"
+	"github.com/kyzyc/biz-demo/app/cart/rpc"
 	"log"
 	"net"
 	"time"
@@ -17,8 +20,11 @@ import (
 )
 
 func main() {
-	opts := kitexInit()
+	_ = godotenv.Load()
+	dal.Init()
+	rpc.Init()
 
+	opts := kitexInit()
 	svr := cartservice.NewServer(new(CartServiceImpl), opts...)
 
 	err := svr.Run()

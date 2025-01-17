@@ -1,6 +1,10 @@
 package model
 
-import "gorm.io/gorm"
+import (
+	"context"
+	"errors"
+	"gorm.io/gorm"
+)
 
 type Cart struct {
 	gorm.Model
@@ -11,4 +15,27 @@ type Cart struct {
 
 func (Cart) TableName() string {
 	return "cart"
+}
+
+func AddItem(ctx context.Context, db *gorm.DB, c *Cart) error {
+	var find Cart
+	err := db.WithContext(ctx).Model(&Cart{}).Where(
+		&Cart{
+			UserId: c.UserId, ProductId: c.ProductId,
+		},
+	).First(&find).Error
+
+	if err != nil && !errors.Is(err, gorm.ErrRecordNotFound) {
+		return err
+	}
+
+	if find.ID > 0 {
+		return db.WithContext(ctx).Model(&Cart{}).Where(
+			&Cart{
+				UserId: c.UserId, ProductId: c.ProductId,
+			},
+		).UpdateColumn("qtx+?", c.Qty).Error
+	}
+
+	return db.WithContext(ctx).Create(c).Error
 }

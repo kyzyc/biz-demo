@@ -2,7 +2,6 @@ package home
 
 import (
 	"context"
-	"fmt"
 	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/cloudwego/hertz/pkg/protocol/consts"
 	"github.com/kyzyc/biz-demo/app/frontend/biz/service"
@@ -22,7 +21,6 @@ func Home(ctx context.Context, c *app.RequestContext) {
 	}
 
 	resp, err := service.NewHomeService(ctx, c).Run(&req)
-	fmt.Println("---------------\nhere")
 	if err != nil {
 		utils.SendErrResponse(ctx, c, consts.StatusOK, err)
 		return
